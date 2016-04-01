@@ -25,7 +25,7 @@ http.createServer(function (req, res) {
     res.statusCode = 404
     res.end('No such location')
   })
-}).listen(3002)
+}).listen(5002)
 
 handler.on('error', function (err) {
     console.error(err.message)
