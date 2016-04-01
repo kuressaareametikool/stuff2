@@ -11,8 +11,8 @@ var handler = webhookHandler({ path: '/webhook', secret: 'secret' })
 gulp.task('default', function() {
     browserSync.init({
         server: { baseDir: "./" },
-        port: 3000,
-        ui: { port: 3001 },
+        port: 5000,
+        ui: { port: 5001 },
         notify: false
     });
     gulp.watch(['./*.html', 'content/*.html']).on('change', browserSync.reload);
